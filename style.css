@@ -1,0 +1,295 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    background: hsl(36, 100%, 99%);
+}
+
+/* Navbar Section */
+nav {
+    padding: 2em 5em 1em 5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    position: relative;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+ul.show {
+    max-width: 200px;
+    display: block;
+    position: absolute;
+    top:  55px;
+    z-index: 0;
+    background: hsl(240, 100%, 5%);
+    padding: 1em;
+   font-size: 0.85rem;
+   line-height: 1.6;
+}
+.nav-link a {
+    color: hsl(233, 8%, 79%);
+    text-decoration: none;
+}
+.nav-link a:hover,
+.nav-link a:focus,
+#hamburger:hover,
+#hamburger:focus {
+    color: hsl(5, 85%, 63%);
+}
+
+ #hamburger{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* .pop-ul {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background: hsl(240, 100%, 5%);
+    padding:2em  3em;
+    border-top: 3px solid hsl(35, 77%, 62%);
+    border-bottom: 3px solid hsl(5, 85%, 63%);
+} */
+
+/* Main section */
+main {
+    width: 100%;
+    padding: 0 5em 1em 5em;
+    margin-bottom: 40px;
+}
+.bg-img-container {
+    width: 100%;
+    max-width: 320px;
+}
+.bg-img-container img {
+    width: 100%;
+}
+.big-heading {
+    width: 200px;
+}
+.big-heading h1 {
+    font-size: 1.5rem;
+    color: hsl(240, 100%, 5%);
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.intro-text-content {
+    margin-top: 20px;
+}
+.sub-text-container {
+    max-width: 300px;
+}
+.sub-text-container p {
+    font-size: 0.88rem;
+    color: hsl(236, 13%, 42%);
+    line-height: 1.4;
+    margin-top: 0;
+}
+.btn-primary {
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0.585em 1.1em;
+    background: hsl(5, 85%, 63%);
+    text-align: center;
+    cursor: pointer;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background: hsl(240, 100%, 5%);
+}
+.btn-primary a {
+    color: hsl(36, 100%, 99%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* the tech news section */
+.abt-tech-news {
+    background: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 0.85em 1.5em;
+    max-width: 320px;
+    margin-top: 40px;
+}
+.abt-tech-news h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.tech-sub-heading {
+    margin-bottom: 0;
+}
+.tech-sub-heading a {
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    font-size: 1rem;
+}
+.tech-sub-heading a:hover,
+.tech-sub-heading a:focus {
+    color: hsl(35, 77%, 62%);
+}
+.abt-tech-news p {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: hsl(233, 8%, 79%);
+}
+hr {
+    height: 2px;
+    background: hsl(236, 13%, 42%);
+    border: none;
+    margin: 30px 0;
+}
+
+ /* About Review section */
+ .review-section{
+    padding: 0 5em 1em 5em
+ }
+ .reviews {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+ }
+.review-img-container {
+    width: 90px;
+    min-width: 90px;
+}
+.review-img {
+    width: 100%;
+}
+.review-text-container {
+    width: 210px;
+    max-width: 200px;
+}
+.review-text-container h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 1.6rem;
+    margin: 0;
+}
+.review-sub-heading {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.review-sub-heading a {
+    color: hsl(240, 100%, 5%);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.review-sub-heading a:hover,
+.review-sub-heading a:focus {
+    color: hsl(5, 85%, 63%);
+}
+.review-text-container p {
+    color: hsl(240, 4%, 72%);
+    margin-top: 10px;
+    font-size: 0.88rem;
+}
+
+
+
+/* Footer  */
+.attribution {
+    text-align: center;
+    font-size: 0.88rem;
+}
+
+@media  (max-width: 580px){
+
+    .logo-container img {
+        width: 45px;
+    }
+    nav {
+        padding: 2em 2em 1em 2em;
+    }
+    main, section {
+        padding: 0 2em 1em 2em;
+    }
+}
+
+
+@media (min-width: 580px) {
+    .bg-img-container {
+        width: 65%;
+        max-width: 775px;
+    }
+}
+
+
+@media (min-width: 768px){
+    main {
+        display: flex;
+        gap: 30px;
+    }
+    .abt-tech-news {
+        max-width: 320px;
+        margin-top: 0;
+    }
+    .abt-tech-news h2 {
+        font-size: 2.2rem;
+    }
+    .first-chapter {
+        width: 100%;
+        max-width: 778px;
+    }
+    .bg-img-container {
+        width: 100%;
+    }
+    .review-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .intro-text-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .big-heading {
+        width: 250px;
+    }
+    .big-heading h1 {
+        margin-top: 0;
+        font-size: 2.4rem;
+    }
+    .sub-text-container {
+        max-width: 400px;
+    }
+    .sub-text-container p {
+        font-size: 1.1rem;
+    }
+    
+    ul.show {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    ul {
+        display: none;
+    }
+    #hamburger {
+        display: inline-block;
+    }
+}
